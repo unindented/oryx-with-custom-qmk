@@ -195,3 +195,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 }
+
+
+
+// Custom stuff
+
+const key_override_t shift_bspc_del_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+
+const key_override_t *key_overrides[] = {
+  &shift_bspc_del_key_override
+};
